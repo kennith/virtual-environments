@@ -18,6 +18,6 @@ RUN apt-get install -yqq wget
 
 # Packer
 RUN wget https://releases.hashicorp.com/packer/1.5.1/packer_1.5.1_linux_amd64.zip -q 
-RUN unzip packer_1.5.1_linux_amd64.zip -d /usr/bin/ && rm packer_1.5.1_linux_amd64.zip
+RUN unzip packer_1.5.1_linux_amd64.zip -d /usr/local/bin/ && rm packer_1.5.1_linux_amd64.zip
 
 CMD [ "/bin/bash" ]
